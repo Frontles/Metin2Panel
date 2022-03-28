@@ -1,0 +1,49 @@
+                                                                                                                        <div class="Row a">
+                                        <div class="Cell">
+                                            <p><span class="status a1"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p>Toplam Online</p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">
+                                            <p class="online">100</span></p>
+                                        </div>
+                                    </div>
+                                                                                                    <div class="Row b">
+                                        <div class="Cell">
+                                            <p><span class="status a1"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p>Bugün Girenler</p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">
+                                            <p class="online">28</span></p>
+                                        </div>
+                                    </div>
+                                                                                                    <div class="Row a">
+                                        <div class="Cell">
+                                            <p><span class="status a1"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p>Toplam Hesap</p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">
+                                            <p class="online">69</span></p>
+                                        </div>
+                                    </div>
+                                                                                                    <div class="Row b">
+                                        <div class="Cell">
+                                            <p><span class="status a1"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p>Toplam Karakter</p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">
+                                            <p class="online">56</span></p>
+                                        </div>
+                                    </div>
+                                                                                                                                            

@@ -1,0 +1,41 @@
+body
+#duyuru-alt {
+	position: fixed;
+	z-index: 999999;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+	color: #00C853;
+	border-top: 1px solid #00C853;
+	background: rgb(86,86,86);
+	background: -moz-radial-gradient(center, ellipse cover,  rgb(86,86,86) 0%, rgb(10,10,10) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover,  rgb(86,86,86) 0%,rgb(10,10,10) 100%);
+	background: radial-gradient(ellipse at center,  rgb(86,86,86) 0%,rgb(10,10,10) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565656', endColorstr='#0a0a0a',GradientType=1 );
+	text-shadow: 1px 1px 0px black;
+	/*border-top: 2px solid #cfa972;
+	/* -webkit-animation: duyuru 0.5s ease-in-out infinite alternate; */
+	/* animation: duyuru 1s ease-in-out infinite; */
+}
+
+@-webkit-keyframes duyuru {
+    0%   {background:#dccce7; height:80px;}
+    100% {background:#FF3333; height:80px;}
+}
+
+#duyuru-alt h4 {
+    margin: 0px;
+    margin-top: 17px;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+#duyuru-alt span {
+    font-weight: 700;
+	color: #fff09a;
+    text-transform: uppercase;
+}

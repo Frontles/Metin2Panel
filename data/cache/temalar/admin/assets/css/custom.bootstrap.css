@@ -1,0 +1,134 @@
+.ajs-body table>thead>tr>th,
+.ajs-body table>tbody>tr>th,
+.ajs-body table>tfoot>tr>th,
+.ajs-body table>thead>tr>td,
+.ajs-body table>tbody>tr>td,
+.ajs-body table>tfoot>tr>td,
+
+table.dataTable>thead>tr>th, 
+table.dataTable>tbody>tr>th, 
+table.dataTable>tfoot>tr>th, 
+table.dataTable>thead>tr>td, 
+table.dataTable>tbody>tr>td, 
+table.dataTable>tfoot>tr>td{
+	font-size: 12px;
+}
+
+table.dataTable tbody td {
+  vertical-align: middle;
+}
+
+.dataTables_paginate{
+	float: right;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+table .pagination {
+	padding: 0px;
+	margin: 0px;
+}
+
+.dataTables_processing {
+	top: 0px !important;
+	left: 0px !important;
+	margin-top: 6px !important;
+	margin-left: 15px !important;
+	margin-bottom: 0px;
+	width: calc(100% - 30px) !important;
+	height: calc(100% - 12px) !important;
+	background: rgba(93, 93, 93, 0.20) !important;
+	border: 0px;
+	border-radius: 0px; 
+	box-shadow: none;
+}
+.dataTables_processing .loader {
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	top: 50%;
+}
+
+.dataTables_processing .loader i {
+	font-size: 32px;
+}
+
+table.dataTable thead th.sorting:after,
+table.dataTable thead th.sorting_asc:after,
+table.dataTable thead th.sorting_desc:after {
+	position: absolute;
+	top: 12px;
+	right: 8px;
+	display: block;
+	font-family: FontAwesome;
+}
+table.dataTable thead th.sorting:after {
+	content: "\f0dc";
+	color: #000;
+	font-size: 0.8em;
+	padding-top: 0.12em;
+	
+}
+table.dataTable thead th.sorting_asc:after {
+	content: "\f0de";
+	font-size: 0.8em;
+	
+}
+table.dataTable thead th.sorting_desc:after {
+	content: "\f0dd";
+	font-size: 0.8em;
+}
+
+ .dataTables_paginate{
+    float: right;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.dataTables_info{
+    padding-left: 5px;
+}
+
+.tooltip-inner {
+	padding: 2px 8px;
+}
+.tooltip {
+	font-size: 10px;
+}
+.popover-content .list-icon{
+	margin: 0;
+}
+.popover-content .list-icon li {
+	margin-bottom: 3px;
+}
+.popover-content{
+	font-size: 11px;    
+}
+.popover-title {
+	margin: 0;
+	line-height: 5px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.select2-search__field{
+	width: 100% !important;
+}
+.kucuk.select2-selection--single {
+	height: 18px !important;
+	line-height: 10px !important;
+	padding: 3px 0px 0px 6px !important;
+	font-size: 10px !important;
+	text-align: left !important;
+}
+.kucuk .select2-results__option {
+	padding: 0px 0px 0px 6px !important;
+	font-size: 10px !important;
+}
+
+table.dataTable.table.dataTable.fixedHeader-floating{
+    z-index: 2;
+}
+
+table.dataTable tfoot td {
+  text-align: left;
+}

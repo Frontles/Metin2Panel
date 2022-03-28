@@ -1,0 +1,49 @@
+						                            <section id="ucp_info" style="padding-right:15px;padding-left:15px;width: 100%;">
+                                <aside>
+                                    <table width="100%">
+                                        <tbody>
+                                        <tr>
+                                            <td width="40%">Karakter Adı :</td>
+                                            <td width="50%" class="wheat">aaaaaaaa</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%">Seviye :</td>
+                                            <td width="50%" class="wheat">1</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%">Bayrak :</td>
+                                            <td width="50%" class="wheat">Jinno</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%">Lonca :</td>
+                                            <td width="50%" class="wheat">Deneme</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </aside>
+                                <aside>
+                                    <table width="100%">
+                                        <tbody>
+                                        <tr>
+                                            <td width="40%">Son Aktif Olma :</td>
+                                            <td width="50%" class="wheat">yaklaşık 2 yıl önce</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%">Oyun Süresi :</td>
+                                            <td width="50%" class="wheat">0 dakika</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%">Durum :</td>
+                                            <td width="50%" class="wheat"><img src="http://www.frontles.com/data/chrs/small/off.png" style="width: 12px;" alt=""></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </aside>
+                                <aside>
+                                    <div class="leader" style="margin-left: 80px;">
+                                        <h3>Karakter</a></h3>
+                                        <img src="http://www.frontles.com/data/chrs/big/5/1.png" style="width:100px">
+                                    </div>
+                                </aside>
+                            </section>
+												

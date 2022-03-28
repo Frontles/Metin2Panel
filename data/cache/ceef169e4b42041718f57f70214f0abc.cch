@@ -1,0 +1,49 @@
+						                        <section id="ucp_info" style="padding-right:15px;padding-left:15px;width: 100%;">
+                            <aside>
+                                <table width="100%">
+                                    <tbody>
+                                    <tr>
+                                        <td width="40%">Lonca Adı :</td>
+                                        <td width="50%" class="wheat">Deneme</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="40%">Puan :</td>
+                                        <td width="50%" class="wheat">19650</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="40%">EXP :</td>
+                                        <td width="50%" class="wheat">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="40%">Bayrak :</td>
+                                        <td width="50%" class="wheat"><img src="http://www.frontles.com/data/flags/3.png" style="width:30px;" alt="Frontles"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </aside>
+                            <aside>
+                                <table width="100%">
+                                    <tbody>
+                                    <tr>
+                                        <td width="40%">Kazanma :</td>
+                                        <td width="50%" class="wheat">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="40%">Beraber :</td>
+                                        <td width="50%" class="wheat">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="40%">Kaybetme :</td>
+                                        <td width="50%" class="wheat">0</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </aside>
+                            <aside>
+                                <div class="leader">
+                                    <h3>Lider : <a href="http://www.frontles.com/detail-player?nameMelihh">Melihh</a></h3>
+                                    <img src="http://www.frontles.com/data/chrs/big/0/90.png" alt="Frontles" style="width:100px">
+                                </div>
+                            </aside>
+                        </section>
+                        						

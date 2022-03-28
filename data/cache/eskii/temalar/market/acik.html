@@ -1,0 +1,718 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MetinBlade</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.metin2blade.com/site/favicon.ico">
+    <link rel="stylesheet" href="https://www.metin2blade.com/site/app/public/shop/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" id="gameStyle" href="https://www.metin2blade.com/site/app/public/shop/css/style.min.css" type="text/css" />
+    <link rel="stylesheet" id="gameStyle" href="https://www.metin2blade.com/site/app/public/shop/css/animate.css" type="text/css" />
+
+    <script type="text/javascript">
+        (function (wd, doc) {
+            var w = wd.innerWidth || doc.documentElement.clientWidth;
+            var h = wd.innerHeight || doc.documentElement.clientHeight;
+            var screenSize = {w: w, h: h};
+            var compareW = 801;
+            if (screenSize.w > 0 && screenSize.w < compareW) {
+                var cssTag = doc.createElement("link"),
+                    cssFile = 'https://www.metin2blade.com/site/app/public/shop/css/responsive.min.css';
+                cssTag.setAttribute("id", "smallStyle");
+                cssTag.setAttribute("rel", "stylesheet");
+                cssTag.setAttribute("type", "text/css");
+                cssTag.setAttribute("href", cssFile);
+                doc.getElementsByTagName("head")[0].appendChild(cssTag);
+            }
+        })(window, document);
+    </script>
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="app/public/shop/css/ie-8-1.css" type="text/css" />
+    <link rel="stylesheet" href="app/public/shop/css/ie-8-2.css" type="text/css" />
+    <![endif]-->
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="app/public/shop/css/ie-8-3.css" type="text/css" />
+    <![endif]-->
+
+    <script type="text/javascript" src="https://www.metin2blade.com/site/app/public/shop/js/composer.js"></script>
+    <script type="text/javascript" src="https://www.metin2blade.com/site/app/public/shop/js/helper.js"></script>
+
+    <!--[if lt IE 8]>
+    <script type="text/javascript" src="app/public/shop/js/ie-8.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="app/public/shop/js/ie-9.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="https://www.metin2blade.com/site/app/public/shop/js/main.js"></script>
+</head><body class="website">
+<div id="page" class="row-fluid">
+    <div id="header" class="header clearfix">
+        <div class="span5  logo-block">
+            <h1>
+                <a style="background: url(https://www.metin2blade.com/site/data/upload/0rT7Cp3w0k2Y9Mz.png) 0 50% no-repeat;background-size: contain;" href="https://www.metin2blade.com/site/ishop/index">MetinBlade</a>
+            </h1>
+            <div class="welcome">
+                <i class="icon-user"></i><span>admin</span>
+                <i class="icon-earth"></i><span>MetinBlade</span>
+            </div>
+        </div>
+        <div class="span7 payment-block">
+            <a href="https://www.metin2blade.com/site/ishop/buy/index">
+                                    <button class="btn-price premium">
+                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png"/>
+                        <span class="premium-name">EP SATIN AL</span>
+                    </button>
+                            </a>
+            <ul class="currency_status currency-amount-2">
+                <li data-currency="1">
+                    <span class="ttip" tooltip-content="Ejderha Parası">
+                        <span class="block-price">
+                            <img src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" width="16" height="16" alt="Ejderha Parası"/>
+                            <span id="balances1" class="end-price" data-currency="0">0</span>
+                        </span>
+                    </span>
+                </li>
+                <li data-currency="2">
+                    <span class="ttip" tooltip-content="Ejderha Markası">
+                        <span class="block-price">
+                            <img src="https://www.metin2blade.com/site/app/public/shop/images/em_coins.png" width="16" height="16" alt="Ejderha Markası" />
+                            <span id="balances2" class="end-price" data-currency="0">0</span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+            <button id="showRightPush" class="account-push" ><i class="icon-menu2"></i></button>
+        </div>
+    </div><!-- header -->
+    <div id="contentContainer">
+        <nav id="slideMenu" class="clearfix">
+            <h2><i class="icon-user"></i> Oyuncu bilgisi</h2>
+            <div class="account-infos">
+                <img class="avatar" height="45" width="45" src="https://www.metin2blade.com/site/app/public/shop/images/chrs/0.png" alt="" />
+                <span class="buy-for">Alışveriş ettiğin hesap:</span>
+                <p class="selected-player">
+                    İsim : admin<br>
+                    Sunucu: MetinBlade                </p>
+            </div>
+
+            <ul class="nav nav-tabs nav-stacked">
+                <li>
+                    <a class="btn-sideitem"  href="https://www.metin2blade.com/site/ishop/nav/characters"><i class="icon-users"></i> Karakterlerim</a>
+                </li>
+                <li>
+                    <a class="btn-sideitem"  href="https://www.metin2blade.com/site/ishop/nav/log"><i class="icon-basket"></i> Satın aldıklarım</a>
+                </li>
+                <li>
+                    <a class="btn-sideitem"  href="https://www.metin2blade.com/site/ishop/nav/depo"><i class="icon-stack"></i> Eşya Depom</a>
+                </li>
+                <li>
+                    <a class="btn-sideitem"  href="https://www.metin2blade.com/site/ishop/nav/coupon"><i class="icon-barcode"></i> Kodu kullan</a>
+                </li>
+            </ul>
+                            <h2><i class="icon-smile"></i> Macera ve eğlence</h2>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li>
+                        <a class="btn-sideitem" id="Xmas2017" href="https://www.metin2blade.com/site/ishop/wheel">
+                            <i class="zicon-wheel"></i>
+                            <span>Çark</span>
+                        </a>
+                    </li>
+                </ul>
+                        <h2> Destek Sistemi</h2>
+            <ul class="nav nav-tabs nav-stacked">
+                <li>
+                    <a class="btn-sideitem" id="Xmas2017" href="https://www.metin2blade.com/site/destek">
+                        <i class="zicon-pandora"></i>
+                        <span>Destek
+							</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="navigation" class="navbar">
+            <div class="container">
+				                <!-- Be sure to leave the brand out there if you want it shown -->
+                <ul class="nav nav-tabs  search">
+					                    <li class="active">
+                        <a class="btn-navitem icon-home btn-navitem-active"  href="https://www.metin2blade.com/site/ishop/index"></a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.metin2blade.com/site/ishop/product/views/12" title="" class="btn-navitem  ">Tüm ürünler</a>
+                    </li>
+                    <li>
+                        <a href="https://www.metin2blade.com/site/ishop/product/discount" title="" class="btn-navitem ">İndirimli ürünler</a>
+                    </li>
+					                        <li>
+                            <a href="https://www.metin2blade.com/site/ishop/product/em" title="" class="btn-navitem ">Marka Ürünler</a>
+                        </li>
+					                                            <li class="special-category">
+                            <a href="https://www.metin2blade.com/site/ishop/wheel" title="" class="btn-navitem ">Çark</a>
+                        </li>
+                                    </ul>
+                <!-- SEARCH FORM -->
+				                <div id="searchBar" class="input-append">
+                    <i class="icon-search"></i>
+                    <form method="post" action="https://www.metin2blade.com/site/ishop/search/index">
+                        <input type="hidden" name="__token" value="29ca2be0bcffcd651a7263eed813424b">
+                        <input name="searchString" class="search-input span2" type="text" placeholder="Arama terimi" value="">
+                        <button class="btn-default btn-search"  type="submit">Ara</button>
+                    </form>
+                </div>
+                <div class="nav-collapse collapse">
+
+                </div>
+            </div>
+        </div><div class="content clearfix" id="wt_refpoint">
+    <div id="landing" class="scrollable_container">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="row-fluid">
+                    <div id="prmo-area" class="span12">
+                        <div id="zs-prmo-slider" class="span8">
+                            <div id="prmoSlider" class="royalSlider rsMinW">
+                                                                    <div class="rsContent slide">
+                                        <div class="bContainer">
+                                            <img src="https://gf3.geo.gfsrv.net/cdn85/73710b0e9893be93562199eaa5f21d.jpg">
+                                            <div class="slider_banner">
+                                                <h3>Simya Efsun Nesnesi nesne markette</h3>
+                                                <p>Ejderha Taşı Simyası için tasarlanmış yeni efsun nesnesi ile simyalarızın efsununu değiştirip, yeniden dönüştürmüş gibi efsunlayabilirsiniz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="rsContent slide">
+                                        <div class="bContainer">
+                                            <img src="https://gf3.geo.gfsrv.net/cdnbb/48143cd4b941ca5e7383049f1646f3.jpg">
+                                            <div class="slider_banner">
+                                                <h3>Hazine avcılarının dikkatine!</h3>
+                                                <p>Aramaların bir sonu var: Şimdi Dükkan'da gizemli Babil hazinesini keşfet, bunu adım adım geliştir ve nadir Grifon petler, ritüel taşları gibi akla hay</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="rsContent slide">
+                                        <div class="bContainer">
+                                            <img src="https://gf3.geo.gfsrv.net/cdn5c/17d4dc6ce00fb6ae7cee2eb4dbf4d5.jpg">
+                                            <div class="slider_banner">
+                                                <h3>Noel şahane geçecek</h3>
+                                                <p>30.11. tarihinden itibaren okey kart oyunu ve yepyeni etkinliklerle süslenmiş maceralara atıl. Tombala veya kader çarkında kazan ve Dükkan'dan eşsiz k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            </div>
+                        </div>
+						                            <div id="zs-prmo-ad" class="span4">
+                                <div class="call-to-action contrast-box">
+                                    <img src="https://gf2.geo.gfsrv.net/cdn78/26c8a254118d6bbbd8ae871744024e.jpg">
+                                    <div class="slider_banner">
+                                        <h3>Metin2 Nesne Marketi</h3>
+                                        <p>Ejderhalara layık kampanya ürünleri</p></div>
+                                </div>
+                            </div>
+						                    </div>
+                </div>
+            </div>
+            <!-- Main CallToAction for a primary calltoaction message-->
+            <br class="clearfloat">
+            <div class="row-fluid">
+                <div class="item-sample span12">
+                    <h2 class="heading-cat">
+						                        <a class="text-link" href="https://www.metin2blade.com/site/ishop/product/views/12">Tüm ürünleri göster</a>Sevilen Ürünler</h2>
+                    <div class="carousell royalSlider contentslider rsDefault visibleNearby card">
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                                                                    <i class="zicon-hd-time-ingame ttip" tooltip-content="Süre : 7 gün"></i>
+																								                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/817890569&token=c4c89d8321de41f08ff228f4d32a2d21">
+                                                <a class="card-heading" title="Pembe Büyülü İksir">Pembe Büyülü İksir</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/817890569&token=c4c89d8321de41f08ff228f4d32a2d21">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/upload/bJOS8xW9s3wlidI.jpg" alt="Pembe Büyülü İksir">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/817890569&token=c4c89d8321de41f08ff228f4d32a2d21">
+                                                    <p class="item-box-description">
+														Karakterinize +20 Canavarlara karşı güç veren değerli iksir. ( 1 Haftalıktır )                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_47" class="end-price" data-value="50">50</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/817890569&token=c4c89d8321de41f08ff228f4d32a2d21">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                                                                    <i class="zicon-hd-time-ingame ttip" tooltip-content="Süre : 7 gün"></i>
+																								                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/539612573&token=c0ced31ae99ebf6d3b5f8023e400ba22">
+                                                <a class="card-heading" title="Beyaz Büyülü İksir">Beyaz Büyülü İksir</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/539612573&token=c0ced31ae99ebf6d3b5f8023e400ba22">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/upload/EtYB80ZYMapA86i.jpg" alt="Beyaz Büyülü İksir">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/539612573&token=c0ced31ae99ebf6d3b5f8023e400ba22">
+                                                    <p class="item-box-description">
+														Karakterinize +10 Kritik vuruş şansı veren değerli iksir. ( 1 Haftalıktır )                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_48" class="end-price" data-value="50">50</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/539612573&token=c0ced31ae99ebf6d3b5f8023e400ba22">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                                                                    <i class="zicon-hd-time-ingame ttip" tooltip-content="Süre : 7 gün"></i>
+																								                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/294096907&token=26f7f14ff2f8798696e2487d55370bce">
+                                                <a class="card-heading" title="Sarı Büyülü İksir">Sarı Büyülü İksir</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/294096907&token=26f7f14ff2f8798696e2487d55370bce">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/upload/4vYPtJFMYAdKUVy.jpg" alt="Sarı Büyülü İksir">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/294096907&token=26f7f14ff2f8798696e2487d55370bce">
+                                                    <p class="item-box-description">
+														Karakterinize +2000 HP Veren Değerli İksir.(1 Haftalıktır )                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_49" class="end-price" data-value="50">50</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/294096907&token=26f7f14ff2f8798696e2487d55370bce">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                                                                    <i class="zicon-hd-time-ingame ttip" tooltip-content="Süre : 0 gün"></i>
+																								                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/359704796&token=aabd36523254eea0419e3bef41cf0dce">
+                                                <a class="card-heading" title="Bilgelik İksiri">Bilgelik İksiri</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/359704796&token=aabd36523254eea0419e3bef41cf0dce">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/items/71153.png" alt="Bilgelik İksiri">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/359704796&token=aabd36523254eea0419e3bef41cf0dce">
+                                                    <p class="item-box-description">
+														Bu iksirle bir saatlik oyun süresinde %100 daha fazla deneyim toplarsın. Satılamaz.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_50" class="end-price" data-value="10">10</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/359704796&token=aabd36523254eea0419e3bef41cf0dce">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                												                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/521712191&token=a8b5f29ca17c96a4c8177ad911bd44cd">
+                                                <a class="card-heading" title="Level Yüzüğü">Level Yüzüğü</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/521712191&token=a8b5f29ca17c96a4c8177ad911bd44cd">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/items/40004.png" alt="Level Yüzüğü">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/521712191&token=a8b5f29ca17c96a4c8177ad911bd44cd">
+                                                    <p class="item-box-description">
+														Karakterinizi 105 yapan değerli yüzük.                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_59" class="end-price" data-value="100">100</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/521712191&token=a8b5f29ca17c96a4c8177ad911bd44cd">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                                                                    <i class="zicon-hd-time-ingame ttip" tooltip-content="Süre : 7 gün"></i>
+																								                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/549950816&token=b63830ddb032f9816335924057b80545">
+                                                <a class="card-heading" title="Buz ejderhası muhafızı">Buz ejderhası muhafızı</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/549950816&token=b63830ddb032f9816335924057b80545">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/upload/pjBM00gJcEmY1H3.png" alt="Buz ejderhası muhafızı">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/549950816&token=b63830ddb032f9816335924057b80545">
+                                                    <p class="item-box-description">
+														Değerli kostüm karakterinize 2000 Hp verir ( Erkek İçindir ). ( 1 Haftalıktır )                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_136" class="end-price" data-value="40">40</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/549950816&token=b63830ddb032f9816335924057b80545">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                                                                    <i class="zicon-hd-time-ingame ttip" tooltip-content="Süre : 30 gün"></i>
+																								                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/730318658&token=60ca4083a4175d670be7b991c21608fc">
+                                                <a class="card-heading" title="EP kuponu (100)">EP kuponu (100)</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/730318658&token=60ca4083a4175d670be7b991c21608fc">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/items/80017.png" alt="EP kuponu (100)">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/730318658&token=60ca4083a4175d670be7b991c21608fc">
+                                                    <p class="item-box-description">
+														100 Ejderha Parası değerinde kupon. Eşya satılabilir.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_128" class="end-price" data-value="100">100</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/730318658&token=60ca4083a4175d670be7b991c21608fc">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                                                                    <i class="zicon-hd-time-ingame ttip" tooltip-content="Süre : 30 gün"></i>
+																								                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/443882096&token=6726522865dbe5e906b3947b3eb80edd">
+                                                <a class="card-heading" title="EP kuponu (50)">EP kuponu (50)</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/443882096&token=6726522865dbe5e906b3947b3eb80edd">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/items/80016.png" alt="EP kuponu (50)">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/443882096&token=6726522865dbe5e906b3947b3eb80edd">
+                                                    <p class="item-box-description">
+														50 Ejderha Parası değerinde kupon. Eşya satılabilir.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_126" class="end-price" data-value="50">50</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/443882096&token=6726522865dbe5e906b3947b3eb80edd">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                												                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/196848326&token=52fb7584a04c212124859dd2f8e7e630">
+                                                <a class="card-heading" title="Karakter Yüzüğü">Karakter Yüzüğü</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/196848326&token=52fb7584a04c212124859dd2f8e7e630">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/items/40001.png" alt="Karakter Yüzüğü">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/196848326&token=52fb7584a04c212124859dd2f8e7e630">
+                                                    <p class="item-box-description">
+														Bu yüzük ile karakterinizi değiştirebilirsiniz tek kullanımlıktır kullandıktan sonra skilleriniz sıfırlanmaktadır.                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_229" class="end-price" data-value="40">40</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/196848326&token=52fb7584a04c212124859dd2f8e7e630">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                                                                    <i class="zicon-hd-time-ingame ttip" tooltip-content="Süre : 30 gün"></i>
+																								                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/416386929&token=b4b677fbc1b99b134e251ceba03174f5">
+                                                <a class="card-heading" title="Ok Çantası(30 Gün)">Ok Çantası(30 Gün)</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/416386929&token=b4b677fbc1b99b134e251ceba03174f5">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/items/79501.png" alt="Ok Çantası(30 Gün)">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/416386929&token=b4b677fbc1b99b134e251ceba03174f5">
+                                                    <p class="item-box-description">
+														Seni savaşta sonsuz sayıda okla destekleyen bir çanta. Hasar uzun menzilli atışlarda düşmez.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_225" class="end-price" data-value="20">20</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/416386929&token=b4b677fbc1b99b134e251ceba03174f5">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            <div class="span4 list-item quickbuy">
+                                <div class="contrast-box  item-box inner-content clearfix" >
+                                    <div class="desc row-fluid">
+                                        <div class="item-description">
+                                            <p class="item-status js_currency_default">
+                                                												                                            </p>
+                                            <h4 class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/411776264&token=93f72211ec86a06c96eac09d5f267727">
+                                                <a class="card-heading" title="Havalı Çelik Yay+9">Havalı Çelik Yay+9</a>
+                                            </h4>
+                                            <div class="item-shortdesc clearfix">
+                                                <a class="item-thumb fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/411776264&token=93f72211ec86a06c96eac09d5f267727">
+                                                    <div class="item-thumb-container">
+                                                        <div id="image" class="picture_wrapper_2">
+                                                            <img class="item-thumb-63" src="https://www.metin2blade.com/site/data/items/02170.png" alt="Havalı Çelik Yay+9">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <span class="category-link"></span>
+                                                <div class="fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/411776264&token=93f72211ec86a06c96eac09d5f267727">
+                                                    <p class="item-box-description">
+														55 Ortalama 10 Yarı,12 Güç,10 Delici Veren Değerli Yay.                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="item-footer price_desc row-fluid js_currency_default">
+                                            <div class="action-box left">
+                                                                                            </div>
+                                            <div class="action-box right">
+                                                <button class="span5 right btn-price">
+                                                    <span class="block-price">
+                                                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                                                        <span id="item_price_226" class="end-price" data-value="90">90</span>
+                                                    </span>
+                                                </button>
+                                                <button class="span5 right btn-buy fancybox fancybox.ajax" href="https://www.metin2blade.com/site/ishop/product/ajax/411776264&token=93f72211ec86a06c96eac09d5f267727">Satın al</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function changePrice2(item_id,num) {
+        var url = "https://www.metin2blade.com/site/ishop/product/price_change";
+        var data = {item_id:item_id,num:num};
+        $.post(url,data,function (rsp) {
+            console.log(rsp);
+           if (rsp.status === true)
+           {
+                $("#item_price_" + item_id).text(rsp.price);
+                $("#item_price_" + item_id).attr("data-value",rsp.price);
+           }
+        },"json");
+    }
+</script><div id="overlayMask"></div>
+</div><!-- close contentContainer -->
+</div>
+</body>
+</html>

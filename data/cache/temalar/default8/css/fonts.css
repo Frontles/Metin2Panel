@@ -1,0 +1,10 @@
+@font-face  {
+	font-family: 'MusicWarrior';
+	src: url('../fonts/MusicWarriord41d.html?') format('eot'), 
+	 url('../fonts/MusicWarrior.html')format('opentype'),
+	 url('../fonts/MusicWarrior.woff') format('woff'), 
+	 url('../fonts/MusicWarrior-2.html')format('truetype'),
+	 url('../fonts/MusicWarrior-3.html#./fonts/MusicWarrior') format('svg');
+}
+
+

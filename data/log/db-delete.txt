@@ -1,0 +1,3 @@
+{"Tarih":"2019-07-09 11:44:54","Sorgu":"DELETE FROM pack WHERE `id`=:id LIMIT 1","Veriler":"1","Dosya":"\/home\/metin2board\/webapps\/metin2board\/site\/app\/models\/admin\/PackModel.php","Sat\u0131r":65};
+{"Tarih":"2019-07-09 11:44:55","Sorgu":"DELETE FROM pack WHERE `id`=:id LIMIT 1","Veriler":"3","Dosya":"\/home\/metin2board\/webapps\/metin2board\/site\/app\/models\/admin\/PackModel.php","Sat\u0131r":65};
+{"Tarih":"2019-07-09 11:59:24","Sorgu":"DELETE FROM patch WHERE `id`=:id LIMIT 1","Veriler":"1","Dosya":"\/home\/metin2board\/webapps\/metin2board\/site\/app\/models\/admin\/NewsModel.php","Sat\u0131r":75};

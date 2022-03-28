@@ -1,0 +1,92 @@
+.admin-tab{
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    overflow: hidden;
+}
+.admin-tab li {
+    float: left;
+    margin: 0 10px;
+    list-style: none
+;
+}
+.admin-tab li  a {
+    line-height: 50px;
+    padding: 0 10px;
+    color: #222;
+    font-weight: 600;
+    display: block;
+}
+
+.admin-tab li.active a {
+    box-shadow: 0 2px 0 0 #00a0d2 inset;
+}
+.tab-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+}
+
+ .permissions{
+     max-width: 48%;
+     border: 1px solid #ccc;
+     background-color: #fff;
+     padding: 10px;
+ }
+.permissions  h3 {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.permissions .list{
+    padding-bottom: 15px;
+
+}
+.permission div:last-child .list{
+    padding-bottom: 0px !important;
+}
+.permissions .list label{
+    display: inline-block !important;
+    margin-right: 10px;
+    font-weight: normal !important;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+#gallery {
+    width: 1000px;
+    margin: 20px auto;
+
+}
+
+.item-container {
+    width: 25%;
+    float: left;
+    padding: 10px;
+
+}
+
+.gallery-item {
+    border:1px solid #ccc;
+
+}
+
+.gallery-item:hover {
+    cursor: pointer;
+    border:1px solid #777;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 30% 50%;
+}
+
+.description {
+    text-align: center;
+    padding: 15px;
+}

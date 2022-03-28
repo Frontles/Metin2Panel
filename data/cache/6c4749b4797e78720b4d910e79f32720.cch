@@ -1,0 +1,147 @@
+                                    <div id="realmlist">
+                        <div class="mini-bar-title"><a href="http://www.frontles.com/ranked-player">Sıralama</a></div>
+                        <div class="mini-ranked-select">
+                            <ul class="idTabs">
+                                <li>
+                                    <a id="player-btn" href="javascript:void(0)" class="selected">Oyuncu Sıralaması</a>
+                                </li>
+                                <li>
+                                    <a id="guild-btn" href="javascript:void(0)">Lonca Sıralaması</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="player-rank" class="ranked-table">
+                            <div class="Heading">
+                                <div class="Cell">
+                                    <p>#</p>
+                                </div>
+                                <div class="Cell">
+                                    <p>İsim</p>
+                                </div>
+                                <div class="Cell">
+                                    <p>Seviye</p>
+                                </div>
+                            </div>
+                            <div style="margin-top:5px;"></div>
+                                                                                                <div class="Row a">
+                                        <div class="Cell">
+                                            <p><span class="grade g1"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><a class="sig"
+                                                  href="http://www.frontles.com/detail-player?name=Frontles">Frontles</a>
+                                            </p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">105</span></p>
+                                        </div>
+                                    </div>
+                                                                    <div class="Row b">
+                                        <div class="Cell">
+                                            <p><span class="grade g2"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><a class="sig"
+                                                  href="http://www.frontles.com/detail-player?name=Mandes">Mandes</a>
+                                            </p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">105</span></p>
+                                        </div>
+                                    </div>
+                                                                    <div class="Row b">
+                                        <div class="Cell">
+                                            <p><span class="grade g3"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><a class="sig"
+                                                  href="http://www.frontles.com/detail-player?name=Mandes2">Mandes2</a>
+                                            </p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">105</span></p>
+                                        </div>
+                                    </div>
+                                                                    <div class="Row b">
+                                        <div class="Cell">
+                                            <p><span class="grade g4"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><a class="sig"
+                                                  href="http://www.frontles.com/detail-player?name=Nopehyte">Nopehyte</a>
+                                            </p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">105</span></p>
+                                        </div>
+                                    </div>
+                                                                    <div class="Row b">
+                                        <div class="Cell">
+                                            <p><span class="grade g5"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><a class="sig"
+                                                  href="http://www.frontles.com/detail-player?name=Melihh">Melihh</a>
+                                            </p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">102</span></p>
+                                        </div>
+                                    </div>
+                                                            
+                        </div>
+                        <div id="guild-rank" class="ranked-table" style="display: none;">
+                            <div class="Heading">
+                                <div class="Cell">
+                                    <p> #</p>
+                                </div>
+                                <div class="Cell">
+                                    <p>Lonca</p>
+                                </div>
+                                <div class="Cell">
+                                    <p>Puan</p>
+                                </div>
+                            </div>
+                            <div style="margin-top:5px;"></div>
+                                                                                                <div class="Row a">
+                                        <div class="Cell">
+                                            <p><span class="grade g1"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><a class="sig"
+                                                  href="http://www.frontles.com/detail-guild?name=Deneme">Deneme</a>
+                                            </p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">19650</span></p>
+                                        </div>
+                                    </div>
+                                                                    <div class="Row b">
+                                        <div class="Cell">
+                                            <p><span class="grade g2"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><a class="sig"
+                                                  href="http://www.frontles.com/detail-guild?name=Mandes2">Mandes2</a>
+                                            </p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">12090</span></p>
+                                        </div>
+                                    </div>
+                                                                    <div class="Row b">
+                                        <div class="Cell">
+                                            <p><span class="grade g3"></span></p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><a class="sig"
+                                                  href="http://www.frontles.com/detail-guild?name=3TEMMUZ">3TEMMUZ</a>
+                                            </p>
+                                        </div>
+                                        <div class="Cell">
+                                            <p><span class="online">0</span></p>
+                                        </div>
+                                    </div>
+                                                                                    </div>
+                    </div>
+                                

@@ -1,0 +1,1557 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MetinBlade</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.metin2blade.com/site/favicon.ico">
+    <link rel="stylesheet" href="https://www.metin2blade.com/site/app/public/shop/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" id="gameStyle" href="https://www.metin2blade.com/site/app/public/shop/css/style.min.css" type="text/css" />
+    <link rel="stylesheet" id="gameStyle" href="https://www.metin2blade.com/site/app/public/shop/css/animate.css" type="text/css" />
+
+    <script type="text/javascript">
+        (function (wd, doc) {
+            var w = wd.innerWidth || doc.documentElement.clientWidth;
+            var h = wd.innerHeight || doc.documentElement.clientHeight;
+            var screenSize = {w: w, h: h};
+            var compareW = 801;
+            if (screenSize.w > 0 && screenSize.w < compareW) {
+                var cssTag = doc.createElement("link"),
+                    cssFile = 'https://www.metin2blade.com/site/app/public/shop/css/responsive.min.css';
+                cssTag.setAttribute("id", "smallStyle");
+                cssTag.setAttribute("rel", "stylesheet");
+                cssTag.setAttribute("type", "text/css");
+                cssTag.setAttribute("href", cssFile);
+                doc.getElementsByTagName("head")[0].appendChild(cssTag);
+            }
+        })(window, document);
+    </script>
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="app/public/shop/css/ie-8-1.css" type="text/css" />
+    <link rel="stylesheet" href="app/public/shop/css/ie-8-2.css" type="text/css" />
+    <![endif]-->
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="app/public/shop/css/ie-8-3.css" type="text/css" />
+    <![endif]-->
+
+    <script type="text/javascript" src="https://www.metin2blade.com/site/app/public/shop/js/composer.js"></script>
+    <script type="text/javascript" src="https://www.metin2blade.com/site/app/public/shop/js/helper.js"></script>
+
+    <!--[if lt IE 8]>
+    <script type="text/javascript" src="app/public/shop/js/ie-8.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="app/public/shop/js/ie-9.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="https://www.metin2blade.com/site/app/public/shop/js/main.js"></script>
+</head><body class="website">
+<div id="page" class="row-fluid">
+    <div id="header" class="header clearfix">
+        <div class="span5  logo-block">
+            <h1>
+                <a style="background: url(https://www.metin2blade.com/site/data/upload/0rT7Cp3w0k2Y9Mz.png) 0 50% no-repeat;background-size: contain;" href="https://www.metin2blade.com/site/ishop/index">MetinBlade</a>
+            </h1>
+            <div class="welcome">
+                <i class="icon-user"></i><span>admin</span>
+                <i class="icon-earth"></i><span>MetinBlade</span>
+            </div>
+        </div>
+        <div class="span7 payment-block">
+            <a href="https://www.metin2blade.com/site/ishop/buy/index">
+                                    <button class="btn-price premium">
+                        <img class="ttip" tooltip-content="Ejderha Parası" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png"/>
+                        <span class="premium-name">EP SATIN AL</span>
+                    </button>
+                            </a>
+            <ul class="currency_status currency-amount-2">
+                <li data-currency="1">
+                    <span class="ttip" tooltip-content="Ejderha Parası">
+                        <span class="block-price">
+                            <img src="https://www.metin2blade.com/site/app/public/shop/images/coins.png" width="16" height="16" alt="Ejderha Parası"/>
+                            <span id="balances1" class="end-price" data-currency="0">0</span>
+                        </span>
+                    </span>
+                </li>
+                <li data-currency="2">
+                    <span class="ttip" tooltip-content="Ejderha Markası">
+                        <span class="block-price">
+                            <img src="https://www.metin2blade.com/site/app/public/shop/images/em_coins.png" width="16" height="16" alt="Ejderha Markası" />
+                            <span id="balances2" class="end-price" data-currency="0">0</span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+            <button id="showRightPush" class="account-push" ><i class="icon-menu2"></i></button>
+        </div>
+    </div><!-- header -->
+    <div id="contentContainer">
+        <nav id="slideMenu" class="clearfix">
+            <h2><i class="icon-user"></i> Oyuncu bilgisi</h2>
+            <div class="account-infos">
+                <img class="avatar" height="45" width="45" src="https://www.metin2blade.com/site/app/public/shop/images/chrs/0.png" alt="" />
+                <span class="buy-for">Alışveriş ettiğin hesap:</span>
+                <p class="selected-player">
+                    İsim : admin<br>
+                    Sunucu: MetinBlade                </p>
+            </div>
+
+            <ul class="nav nav-tabs nav-stacked">
+                <li>
+                    <a class="btn-sideitem"  href="https://www.metin2blade.com/site/ishop/nav/characters"><i class="icon-users"></i> Karakterlerim</a>
+                </li>
+                <li>
+                    <a class="btn-sideitem"  href="https://www.metin2blade.com/site/ishop/nav/log"><i class="icon-basket"></i> Satın aldıklarım</a>
+                </li>
+                <li>
+                    <a class="btn-sideitem"  href="https://www.metin2blade.com/site/ishop/nav/depo"><i class="icon-stack"></i> Eşya Depom</a>
+                </li>
+                <li>
+                    <a class="btn-sideitem"  href="https://www.metin2blade.com/site/ishop/nav/coupon"><i class="icon-barcode"></i> Kodu kullan</a>
+                </li>
+            </ul>
+                            <h2><i class="icon-smile"></i> Macera ve eğlence</h2>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li>
+                        <a class="btn-sideitem" id="Xmas2017" href="https://www.metin2blade.com/site/ishop/wheel">
+                            <i class="zicon-wheel"></i>
+                            <span>Çark</span>
+                        </a>
+                    </li>
+                </ul>
+                        <h2> Destek Sistemi</h2>
+            <ul class="nav nav-tabs nav-stacked">
+                <li>
+                    <a class="btn-sideitem" id="Xmas2017" href="https://www.metin2blade.com/site/destek">
+                        <i class="zicon-pandora"></i>
+                        <span>Destek
+							</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="navigation" class="navbar">
+            <div class="container">
+				                <!-- Be sure to leave the brand out there if you want it shown -->
+                <ul class="nav nav-tabs  search">
+					                    <li class="">
+                        <a class="btn-navitem icon-home "  href="https://www.metin2blade.com/site/ishop/index"></a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.metin2blade.com/site/ishop/product/views/12" title="" class="btn-navitem  ">Tüm ürünler</a>
+                    </li>
+                    <li>
+                        <a href="https://www.metin2blade.com/site/ishop/product/discount" title="" class="btn-navitem ">İndirimli ürünler</a>
+                    </li>
+					                        <li>
+                            <a href="https://www.metin2blade.com/site/ishop/product/em" title="" class="btn-navitem ">Marka Ürünler</a>
+                        </li>
+					                                            <li class="special-category">
+                            <a href="https://www.metin2blade.com/site/ishop/wheel" title="" class="btn-navitem btn-navitem-active">Çark</a>
+                        </li>
+                                    </ul>
+                <!-- SEARCH FORM -->
+				                <div id="searchBar" class="input-append">
+                    <i class="icon-search"></i>
+                    <form method="post" action="https://www.metin2blade.com/site/ishop/search/index">
+                        <input type="hidden" name="__token" value="29ca2be0bcffcd651a7263eed813424b">
+                        <input name="searchString" class="search-input span2" type="text" placeholder="Arama terimi" value="">
+                        <button class="btn-default btn-search"  type="submit">Ara</button>
+                    </form>
+                </div>
+                <div class="nav-collapse collapse">
+
+                </div>
+            </div>
+        </div><script type="text/javascript">var dir = zs.data.dir || {};</script>
+<script type="text/javascript" src="https://www.metin2blade.com/site/app/public/shop/js/wheel-1.js"></script>
+<link rel="stylesheet" id="gameStyle" href="https://www.metin2blade.com/site/app/public/shop/css/wheel.min.css" type="text/css"/>
+<style>
+
+</style>
+<div class="content clearfix" id="wt_refpoint">
+    <div class="mg-breadcrumb-container row-fluid">
+        <h2>
+            <ul class="breadcrumb">
+                <li>Çark</li>
+            </ul>
+        </h2>
+        <a class="wheel-help minigames-help ttip" href="javascript:void(0)"><i class="icon-book"></i>Yardım ve bilgi</a>
+    </div>
+    <div id="wheel-game" class=" wheel lvl-1">
+        <!-- Wheel Pause Overlay -->
+        <!-- Wheel Stage -->
+        <ul class="wheel-menu">
+            <li>
+                <!-- Tabs Menu -->
+                <a id="wheel-prices" class="btn-navitem">
+                    <!--  <i class="open-box"></i>-->
+                    <span>Olası ödüller</span>
+                </a>
+            </li>
+        </ul>
+        <!--    </div>-->
+        <!--    Wheel   -->
+        <div id="wheel-container" class="span8">
+            <div id="wheel" class="_wl-sprite clockwise">
+                <!-- Keys Rendering -->
+                <div class="wheel-keys">
+                    <i id="key-3" class="key icon-key-wheel _wl-sprite"><i class="before"></i></i>
+                    <i id="key-7" class="key icon-key-wheel _wl-sprite"><i class="before"></i></i>
+                    <i id="key-11" class="key icon-key-wheel _wl-sprite"><i class="before"></i></i>
+                    <i id="key-15" class="key icon-key-wheel _wl-sprite"><i class="before"></i></i>
+                </div>
+                <!-- Keys Rendering -->
+                <div class="wheel-ring _wl-sprite"></div>
+                <!-- Before Play  -->
+                <div id="teaser1" class="teaser wheel-items">
+																                        <img class="wheel-item-1 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-2 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-3 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-4 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-5 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-6 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-7 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-8 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-9 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-10 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-11 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-12 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-13 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-14 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-15 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-16 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+					                </div>
+                <div id="teaser2" class="teaser wheel-items">
+																                        <img class="wheel-item-1 teaser" src="https://www.metin2blade.com/site/data/items/00010.png" alt="">
+											                        <img class="wheel-item-2 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-3 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-4 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-5 teaser" src="https://www.metin2blade.com/site/data/items/00010.png" alt="">
+											                        <img class="wheel-item-6 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-7 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-8 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-9 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-10 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-11 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-12 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-13 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-14 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-15 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-16 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+					                </div>
+                <div id="teaser3" class="teaser wheel-items">
+																                        <img class="wheel-item-1 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-2 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-3 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-4 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-5 teaser" src="https://www.metin2blade.com/site/data/items/00010.png" alt="">
+											                        <img class="wheel-item-6 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-7 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-8 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-9 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-10 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-11 teaser" src="https://www.metin2blade.com/site/data/items/00010.png" alt="">
+											                        <img class="wheel-item-12 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-13 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-14 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-15 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+											                        <img class="wheel-item-16 teaser" src="https://www.metin2blade.com/site/data/items/00070.png" alt="">
+					                </div>
+                <!-- Play Button  -->
+                <div id="wheel-spinner">
+                    <div class="wheel-btn _wl-sprite ">
+                        <a href="https://www.metin2blade.com/site/ishop/wheel/not_cash" class="play fancybox fancybox.ajax">
+                            <div id="spinButton">
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            Çevir!<br>(10&nbsp;<img class="ttip" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png">)
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Play Button-->
+            </div>
+        </div>
+        <!--    Wheel Info  -->
+        <div id="wheel-info" class="span2 small">
+            <!--  Stage Info  -->
+            <p>Çarkı yalnızca 10 <img class="ttip" src="https://www.metin2blade.com/site/app/public/shop/images/coins.png"> karşılığında çevir!</p>
+        </div>
+        <!--   Fancybox -->
+        <!-- Fancy Help -->
+        <div id="fancybox-help" class="fancyboxContentContainer">
+            <div id="wheel-help" class="contrast-box">
+                <h2><i class="icon-info"></i>&nbsp;Yardım ve bilgi</h2>
+                <div class="grey-box ">
+                    <h3>Çark nedir?</h3>
+                    <p>Kader Çarkı, çarkıfelek gibi işlev görür: Bir kere çevirmek için belirli bir miktar Ejder Parası ödenir (kazanılan Ejderha Markası otomatik olarak hesabına geçirilir). Çarkın ortasındaki "Çevir" yazılı butona bir kere tıkladığında çark dönmeye başlar. Dış alanlarda şimdi kazanabileceğin ödüller görüntülenir ve şansın kadere bırakılır. Çarkın durduğu yerdeki eşya da senin ödülün olur.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rewards Panel  -->
+        <div id="wheel-special-stage" class="wheel-special-stage-articles mg-possible-rewards rewards-panel">
+            <i title="Kapat" class="icon-close close-panel" onclick="hideRewardsPanel()"></i>
+            <div class="contrast-box tabbable" >
+                <h2 class="reward-title">Tüm ödüller</h2>
+                <ul class="nav nav-tabs"  data-tabs="tabs">
+                    <li class="active">
+                        <a class="heading-tab" data-toggle="tab" href="#special-rewards">
+                            Olası Ödüller
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="tab-content ">
+                <!-- start special rewards -->
+                <div class="tab-pane active scrollable_container mCustomScrollbar" id="special-rewards">
+                    <div class="contrast-box" id="reward-1">
+                        <div class="grey-box">
+                            <h3 class="title-reward">1. Set Ödüllleri</h3>
+                            <div class="carousell-reward-1   carousell-reward royalSlider rsNoDrag contentslider rsDefault visibleNearby card rsHorcard">
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                            </div>
+                        </div>
+                    </div>
+                    <div class="contrast-box" id="reward-2">
+                        <div class="grey-box">
+                            <h3 class="title-reward">2. Set Ödüllleri</h3>
+                            <div class="carousell-reward-2   carousell-reward royalSlider rsNoDrag contentslider rsDefault visibleNearby card rsHorcard">
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Kılıç+5">Kılıç+5</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00010.png" alt="Kılıç+5">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Kılıç+9">Kılıç+9</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00010.png" alt="Kılıç+9">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                            </div>
+                        </div>
+                    </div>
+                    <div class="contrast-box" id="reward-3">
+                        <div class="grey-box">
+                            <h3 class="title-reward">3. Set Ödüllleri</h3>
+                            <div class="carousell-reward-3 carousell-reward royalSlider rsNoDrag contentslider rsDefault visibleNearby card rsHorcard">
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Kılıç+5">Kılıç+5</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00010.png" alt="Kılıç+5">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Kılıç+9">Kılıç+9</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00010.png" alt="Kılıç+9">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                                    <div class="list-item quickbuy">
+                                        <div class="contrast-box  item-box inner-content clearfix" >
+                                            <div class="desc row-fluid">
+                                                <div class="item-description">
+                                                    <h4>
+                                                        <a class="card-heading" title="Orkide Kılıcı+3">Orkide Kılıcı+3</a>
+                                                    </h4>
+                                                    <div id="scrollTo10453213" class="item-shortdesc clearfix">
+                                                        <a class="item-thumb">
+                                                            <div class="item-thumb-container">
+                                                                <div class="picture_wrapper_2">
+                                                                    <img class=" item-thumb-63" src="https://www.metin2blade.com/site/data/items/00070.png" alt="Orkide Kılıcı+3">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span class="category-link"></span>
+                                                        <div>
+                                                            <p>
+																asdasd                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="overlayMask"></div>
+</div><!-- close contentContainer -->
+</div>
+</body>
+</html>

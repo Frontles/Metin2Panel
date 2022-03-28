@@ -1,0 +1,1 @@
+[12-Jan-2019 12:50:21 UTC] PHP Fatal error:  Call to a member function header() on null in /home/myte2/public_html/site/app/public/client/default/assets/images/navigation/index.php on line 7

@@ -1,0 +1,115 @@
+ <script>window.location = "../../errors.html";</script>    <div id="item-fancybox" class="scrollable_container_fancy">
+        <div id="itemDetails" class="contrast-box row-fluid contrast-box">
+            <!--sale-->
+            <div class="span12">
+                <div class="meta-infos clearfix">
+                    <h2 id="name" class="left ">
+                        <span id="selectionNameMain">Abanoz Küpe+9</span>
+                    </h2>
+                    <div class="meta-prop">
+                        <div class="price">
+                            <span class="price-label">Fiyat:</span>
+                            <span class="amount js_currency">
+                    <span class="block-price">
+                        <img class="ttip" tooltip-content="Ejderha Parası" src="../../../app/public/shop/images/coins.png" alt="Ejderha Parası"/>
+                        <span id="end-price" class="end-price old-price">15</span>
+                    </span>
+                        </span>
+                        </div>
+                        <p class="bill_mileage text-success">
+                        <span class="block-price">
+                            <img class="ttip" tooltip-content="Ejderha Markası" src="../../../app/public/shop/images/em_coins.png" alt="Ejderha Markası"/>
+                            <span id="end-mileage" class="end-mileage">15</span>
+                        </span>
+                            hesabına geçecek.
+                        </p>
+                    </div>
+                    <div class="breadcrumb">
+                        <span><a href="../../index.html">Anasayfa</a>&rsaquo;</span>
+						                        <span><a href="../view/20%26token%3d98f13708210194c475687be6106a3b84.html">Küpeler</a>&rsaquo;</span>
+                        <span class="active">Abanoz Küpe+9</span>
+                    </div>
+                </div>
+                <div id="pictureShowcase">
+                    <div class="item-info clearfix">
+                        <div class="item-showcase grey-box  span4">
+                            <div id="image" class="picture_wrapper">
+                                <img id="selectionImageMain" class="image" src="../../../data/items/17100.png" alt="Abanoz Küpe+9"/>
+                            </div>
+                        </div>
+                        <div class="tabbable item-description span8">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#info" data-toggle="tab">
+										                                            Bilgi
+										                                    </a></li>
+                                <li ><a href="#description" data-toggle="tab">Açıklama</a></li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div class="tab-pane scrollable_container_fancy grey-box active" id="info">
+                                    <p id="selectionShortMain">
+										değerli küpe                                    </p>
+                                </div>
+								                                    <div class="tab-pane scrollable_container_fancy grey-box " id="description">
+										değerli küpe                                    </div>
+								                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="itemBuy" class="contrast-box volume_discount contrast-box">
+            <div class="grey-box clearfix">
+                <div class=" dark-grey-box clearfix">
+                    <div class="contrast-box 1 ">
+                        <div class="amount clearfix js_currency" data-currency="1" style="padding: 20px;">
+							                                <label>Bu ürün için çoklu miktar seçim özelliği yoktur.</label>
+                                <ul id="js_button_container" class="clearfix ">
+                                    <li>
+                                        <button type="button" class="btn-discount _5 btn-active">1</button>
+                                    </li>
+                                </ul>
+							                        </div>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="buy" class="">
+                        <form>
+                            <p>Şu anki fiyatı:</p>
+                            <p class="bill_price block-price">
+                                <img class="ttip" tooltip-content="Ejderha Parası" src="../../../app/public/shop/images/coins.png" alt="Ejderha Parası" />
+                                <span id="end-price_1" class="end-price">15</span>
+                            </p>
+                            <div class="buy-btn-box clearfix">
+                                <div class="btn-group ">
+                                    <a id="buyItem" href="../buy/849249561/1/18b06045e55884023b06cf9fbebc40b2681b552b93c3b32748aa6f5525e70259.html" class="fancybox fancybox.ajax"><button type="button" class="btn-price">Satın al</button></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- grey-box closed -->
+        </div> <!-- item-buy closed -->
+    </div><!-- item-fancy closed -->
+    <script>
+        function changePrice(item_id,num) {
+            var url = "../price_change2.html";
+            var data = {item_id:item_id,num:num};
+            $.post(url,data,function (rsp) {
+                if (rsp.status === true)
+                {
+                    for (var i=1;i<=rsp.multi;i++)
+                    {
+                        if(num === i)
+                            $("#btn-active-"+i).addClass("btn-active");
+                        else
+                            $("#btn-active-"+i).removeClass("btn-active");
+
+                    }
+                    $('#end-price').text(rsp.price);
+                    $('#end-price_1').text(rsp.price);
+                    $('#end-mileage').text(rsp.price);
+                    var buyUrl = "https://www.metin2blade.com/site/ishop/product/buy/849249561/" + rsp.count + "/" + rsp.hash;
+                    $('#buyItem').attr('href',buyUrl);
+                }
+            },"json");
+        }
+    </script>

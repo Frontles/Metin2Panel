@@ -1,0 +1,70 @@
+                                <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tile-stats">
+                        <div class="icon"><i class="fa fa-user fa-2x"></i></div>
+                        <div class="count">69 <small>Kişi</small></div>
+                        <h3>Toplam Hesap</h3>
+                        <p>Toplam Oyuncu Sayısını Gösterir.</p>
+                    </div>
+                </div>
+                <div  class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="tile-stats">
+                        <div class="icon"><i><i  class="fa fa-user-check"></i></i></div>
+                        <div class="count">69 <small>Kişi</small></div>
+                        <h3>Aktif Hesap</h3>
+                        <p>Banlanmamış Oyuncu Sayısını Gösterir.</p>
+                    </div>
+                </div>
+                <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tile-stats">
+                        <div class="icon"><i class="fa fa-user-times"></i></div>
+                        <div class="count">0 <small>Kişi</small></div>
+                        <h3>Banlı Hesap</h3>
+                        <p>Banlanmış Oyuncu Sayısını Gösterir.</p>
+                    </div>
+                </div>
+
+                <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tile-stats">
+                        <div class="icon"><i class="fa fa-gamepad"></i></div>
+                        <div class="count">31 <small>Adet</small> </div>
+                        <h3>Toplam Karakter</h3>
+                        <p>Oyundaki Toplam Karakter Sayısını Gösterir.</p>
+                    </div>
+                </div>
+
+                <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tile-stats">
+                        <div class="icon"><i class="fa fa-store"></i></div>
+                        <div class="count">31 <small>Adet</small></div>
+                        <h3>Aktif Pazar</h3>
+                        <p>Oyundaki Aktif Pazar Sayısını Gösterir.</p>
+                    </div>
+                </div>
+
+                <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tile-stats">
+                        <div class="icon"><i class="far fa-address-book"></i></div>
+                        <div class="count">0 <small>Kişi</small></div>
+                        <h3>Günlük Kayıt</h3>
+                        <p>Oyundaki Kayıt  Sayısını Gösterir.</p>
+                    </div>
+                </div>
+
+                <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tile-stats">
+                        <div class="icon"><i class="fas fa-sign-in-alt"></i></div>
+                        <div class="count">0 <small>Kişi</small></div>
+                        <h3>Günlük Giriş</h3>
+                        <p>Günlük Oyuncu  Sayısını Gösterir.</p>
+                    </div>
+                </div>
+                <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="tile-stats">
+                        <div class="icon"><i class="fab fa-guilded"></i></div>
+                        <div class="count">3 <small>Adet</small></div>
+                        <h3>Toplam Lonca</h3>
+                        <p>Toplam Lonca  Sayısını Gösterir.</p>
+                    </div>
+                </div>
+
+                                

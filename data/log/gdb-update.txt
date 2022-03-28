@@ -1,0 +1,2 @@
+{"Tarih":"2020-08-31 15:03:22","Sorgu":"UPDATE account SET `cash`=:cash WHERE `id`=:id","Veriler":"21312312321,190","Dosya":"E:\\laragon\\www\\metin2\\app\\models\\admin\\AccountModel.php","Sat\u0131r":424};
+{"Tarih":"2020-08-31 15:03:27","Sorgu":"UPDATE account SET `cash`=:cash WHERE `id`=:id","Veriler":"21312312321,190","Dosya":"E:\\laragon\\www\\metin2\\app\\models\\admin\\AccountModel.php","Sat\u0131r":424};
